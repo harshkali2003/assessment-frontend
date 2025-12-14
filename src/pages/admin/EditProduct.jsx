@@ -18,14 +18,13 @@ export default function EditProduct() {
 
   const [loading, setLoading] = useState(true);
 
-  // ---------------- FETCH PRODUCT (PREFILL) ----------------
   useEffect(() => {
     async function fetchProduct() {
       try {
         const token = localStorage.getItem("token");
 
         const { data } = await axios.get(
-          `http://localhost:5000/product/item/${id}`,
+          `hhttps://mithaighar.onrender.com/product/item/${id}`,
           {
             headers: {
               Authorization: token,
@@ -39,7 +38,7 @@ export default function EditProduct() {
             category: data.data.category,
             price: data.data.price,
             quantity: data.data.quantity,
-            image: null, // image optional on edit
+            image: null, 
           });
         }
       } catch (err) {
@@ -53,7 +52,6 @@ export default function EditProduct() {
     fetchProduct();
   }, [id, navigate]);
 
-  // ---------------- HANDLE CHANGE ----------------
   const handleChange = (e) => {
     const { name, value, files } = e.target;
 
@@ -64,7 +62,6 @@ export default function EditProduct() {
     }
   };
 
-  // ---------------- SUBMIT EDIT ----------------
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -77,13 +74,12 @@ export default function EditProduct() {
       formData.append("price", form.price);
       formData.append("quantity", form.quantity);
 
-      // only append image if changed
       if (form.image) {
         formData.append("image", form.image);
       }
 
       const { data } = await axios.put(
-        `http://localhost:5000/product/edit/${id}`,
+        `https://mithaighar.onrender.com/product/edit/${id}`,
         formData,
         {
           headers: {

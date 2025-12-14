@@ -35,7 +35,7 @@ const handleSubmit = async (e) => {
     formData.append("image", form.image);
 
     const res = await axios.post(
-      "http://localhost:5000/user/signup",
+      "https://mithaighar.onrender.com/user/signup",
       formData,
       {
         headers: {
@@ -45,11 +45,9 @@ const handleSubmit = async (e) => {
     );
 
     if (res.data.message === "success") {
-      // store token & user
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.result));
 
-      // redirect to home
       navigate("/");
     }
   } catch (err) {

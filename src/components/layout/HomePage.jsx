@@ -18,8 +18,8 @@ export default function HomePage() {
       setLoading(true);
 
       const url = query
-        ? `http://localhost:5000/product/search?name=${query}`
-        : `http://localhost:5000/product/`;
+        ? `https://mithaighar.onrender.com/product/search?name=${query}`
+        : `https://mithaighar.onrender.com/product/`;
 
       const { data } = await axios.get(url);
 
@@ -64,7 +64,7 @@ export default function HomePage() {
     try {
       const token = localStorage.getItem("token");
       const { data } = await axios.delete(
-        `http://localhost:5000/product/delete/${id}`,
+        `https://mithaighar.onrender.com/product/delete/${id}`,
         {
           headers: { Authorization: token },
         }
@@ -98,7 +98,7 @@ export default function HomePage() {
       }
 
       const { data } = await axios.patch(
-        `http://localhost:5000/product/purchase/${productId}`,
+        `https://mithaighar.onrender.com/product/purchase/${productId}`,
         {},
         {
           headers: {

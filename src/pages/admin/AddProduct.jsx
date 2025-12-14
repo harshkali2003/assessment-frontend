@@ -44,7 +44,7 @@ export default function AddProduct() {
       formData.append("image", form.image);
 
       const { data } = await axios.post(
-        "http://localhost:5000/product/add",
+        "https://mithaighar.onrender.com/product/add",
         formData,
         {
           headers: {

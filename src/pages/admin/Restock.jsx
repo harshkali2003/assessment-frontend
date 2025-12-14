@@ -27,8 +27,8 @@ export default function StockAdjustment() {
       setLoading(true);
 
       const url = isIncrease
-        ? `http://localhost:5000/product/stock/increase/${productId}`
-        : `http://localhost:5000/product/stock/decrease/${productId}`;
+        ? `https://mithaighar.onrender.com/product/stock/increase/${productId}`
+        : `https://mithaighar.onrender.com/product/stock/decrease/${productId}`;
 
       const { data } = await axios.post(
         url,
