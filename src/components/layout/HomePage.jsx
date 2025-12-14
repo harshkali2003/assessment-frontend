@@ -148,7 +148,7 @@ export default function HomePage() {
         ) : (
           products.map((product) => (
             <div className="product-card" key={product._id}>
-              <img src={`http://localhost:5000/uploads/${product.image}`} alt={product.name} />
+              <img src={`https://mithaighar.onrender.com/uploads/${product.image}`} alt={product.name} />
 
               <div className="product-info">
                 <h3>{product.name}</h3>
