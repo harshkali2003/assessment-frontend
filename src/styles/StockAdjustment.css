@@ -1,4 +1,3 @@
-/* -------------------- PAGE -------------------- */
 .stock-page {
   min-height: 100vh;
   background: linear-gradient(135deg, #fbe9eb, #fff);
@@ -9,7 +8,6 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-/* -------------------- CARD -------------------- */
 .stock-card {
   width: 100%;
   max-width: 380px;
@@ -19,7 +17,6 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* -------------------- HEADER -------------------- */
 .page-title {
   text-align: center;
   font-size: 22px;
@@ -33,7 +30,6 @@
   margin-bottom: 20px;
 }
 
-/* -------------------- FORM -------------------- */
 .stock-form {
   display: flex;
   flex-direction: column;
@@ -62,7 +58,6 @@
   outline: none;
 }
 
-/* -------------------- BUTTON -------------------- */
 .submit-btn {
   margin-top: 8px;
   padding: 12px;
@@ -74,12 +69,10 @@
   cursor: pointer;
 }
 
-/* Increase */
 .submit-btn.increase {
   background-color: #1976d2;
 }
 
-/* Decrease */
 .submit-btn.decrease {
   background-color: #d32f2f;
 }
@@ -88,7 +81,6 @@
   opacity: 0.95;
 }
 
-/* -------------------- DESKTOP -------------------- */
 @media (min-width: 768px) {
   .stock-card {
     padding: 32px;

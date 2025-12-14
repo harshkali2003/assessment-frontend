@@ -60,7 +60,7 @@ const handleSubmit = async (e) => {
   return (
     <div className="signup-page">
       <div className="signup-card">
-        <h1 className="signup-logo">🍬 Sweet Shop</h1>
+        <h1 className="signup-logo">🍬 Mithai Ghar</h1>
         <p className="signup-subtitle">Create your account</p>
 
         <form onSubmit={handleSubmit} className="signup-form">

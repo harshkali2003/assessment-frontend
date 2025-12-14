@@ -34,7 +34,7 @@ export default function Login() {
   return (
     <div className="login-page">
       <div className="login-card">
-        <h1 className="login-logo">🍬 Sweet Shop</h1>
+        <h1 className="login-logo">🍬 Mithai Ghar</h1>
         <p className="login-subtitle">Welcome back! Please login</p>
 
         <form onSubmit={handleSubmit} className="login-form">

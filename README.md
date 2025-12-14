@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+🎨 Frontend – Sweet Shop Management System
+📖 Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend application for the Sweet Shop Management System, developed as part of a Software Developer Internship Assessment.
 
-## Available Scripts
+The frontend provides a clean and user-friendly interface for:
 
-In the project directory, you can run:
+Customers to browse and purchase sweets
 
-### `npm start`
+Admins to manage products and inventory
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application follows a single frontend with role-based UI rendering, instead of separate apps, to keep the system simple and efficient.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🚀 Tech Stack
 
-### `npm test`
+React.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React Router DOM
 
-### `npm run build`
+Axios
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React Toastify
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+CSS (Mobile-first styling)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+JWT-based auth handling
 
-### `npm run eject`
+📂 Folder Structure
+frontend/
+│
+├── components/          # Reusable UI components
+├── pages/               # Page-level components
+├── styles/              # CSS files
+├── utils/               # Helper functions
+├── App.js
+├── index.js
+└── README.md
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🧑‍💻 Features
+👤 User
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Browse products
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Search sweets
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Purchase products
 
-## Learn More
+View stock availability
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🛠 Admin
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Add new products
 
-### Code Splitting
+Edit product details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Delete products
 
-### Analyzing the Bundle Size
+Increase / decrease stock
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Admin-only controls visible based on role
 
-### Making a Progressive Web App
+🎯 Design Decisions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Single frontend for Admin & User
 
-### Advanced Configuration
+UI changes dynamically based on user role
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Avoided unnecessary complexity of separate admin panel
 
-### Deployment
+Mobile-first approach
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Clean, readable UI
 
-### `npm run build` fails to minify
+Real-time updates after actions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🤖 AI Assistance Used (Transparent Disclosure)
+
+AI tools (ChatGPT) were used as a development assistant, especially during planning and UI decisions.
+
+Frontend AI Help Included:
+
+✅ Folder structuring
+
+Helped organize pages, components, and styles logically
+
+✅ Architecture decisions
+
+Guidance on whether to create a separate admin panel
+
+Decided to keep a single frontend with role-based UI
+
+✅ UI/UX assistance
+
+Help with layout ideas
+
+Improving responsiveness
+
+Styling admin action buttons and forms
+
+Improving user feedback with toasts
+
+The final UI, component logic, and styling were implemented and customized manually.
+
+▶️ How to Run Frontend
+npm install
+npm start
+
+
+Make sure backend is running on:
+
+http://localhost:5000
+
+✅ Assessment Notes
+
+This frontend focuses on:
+
+Simplicity
+
+Clear UX
+
+Role-based rendering
+
+Practical real-world patterns
+
+🙌 Final Note
+
+This project was built with learning, correctness, and clarity as priorities.
+AI was used responsibly as a guide and debugging assistant, while all core understanding and implementation decisions were made independently.

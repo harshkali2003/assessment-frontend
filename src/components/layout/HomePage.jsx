@@ -13,7 +13,6 @@ export default function HomePage() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // ---------------- FETCH PRODUCTS ----------------
   async function fetchProducts(query = "") {
     try {
       setLoading(true);
@@ -38,7 +37,6 @@ export default function HomePage() {
     }
   }
 
-  // ---------------- DEBOUNCED SEARCH ----------------
   useEffect(() => {
     const timer = setTimeout(() => {
       fetchProducts(search.trim());
@@ -47,7 +45,6 @@ export default function HomePage() {
     return () => clearTimeout(timer);
   }, [search]);
 
-  // ---------------- INITIAL LOAD ----------------
   useEffect(() => {
     fetchProducts();
   }, []);
@@ -122,9 +119,9 @@ export default function HomePage() {
 
   return (
     <div className="home-container">
-      {/* ---------- HEADER ---------- */}
+      
       <div className="home-header">
-        <h1 className="logo">🍬 Sweet Shop</h1>
+        <h1 className="logo">🍬 Mithai Ghar</h1>
 
         <div className="header-right">
           <input
@@ -143,7 +140,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ---------- PRODUCT GRID ---------- */}
       <div className="product-grid">
         {loading ? (
           <p className="empty-text">Loading...</p>

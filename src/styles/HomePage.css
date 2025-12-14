@@ -1,4 +1,3 @@
-/* -------------------- PAGE -------------------- */
 .home-container {
   padding: 16px;
   background-color: #fafafa;
@@ -6,7 +5,6 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-/* -------------------- HEADER -------------------- */
 .home-header {
   display: flex;
   flex-direction: column;
@@ -44,14 +42,12 @@
   cursor: pointer;
 }
 
-/* -------------------- GRID -------------------- */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
 
-/* -------------------- CARD -------------------- */
 .product-card {
   background: white;
   border-radius: 14px;
@@ -85,7 +81,6 @@
   color: #666;
 }
 
-/* -------------------- USER BUTTON -------------------- */
 .purchase-btn {
   margin: 12px;
   padding: 10px;
@@ -100,7 +95,6 @@
   background-color: #ccc;
 }
 
-/* -------------------- ADMIN ACTIONS -------------------- */
 .admin-actions {
   padding: 12px;
   border-top: 1px solid #eee;
@@ -144,14 +138,12 @@
   background: #ccc;
 }
 
-/* -------------------- EMPTY -------------------- */
 .empty-text {
   grid-column: 1 / -1;
   text-align: center;
   color: #777;
 }
 
-/* -------------------- DESKTOP -------------------- */
 @media (min-width: 768px) {
   .home-header {
     flex-direction: row;
