@@ -1,0 +1,96 @@
+/* -------------------- PAGE -------------------- */
+.stock-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fbe9eb, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* -------------------- CARD -------------------- */
+.stock-card {
+  width: 100%;
+  max-width: 380px;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* -------------------- HEADER -------------------- */
+.page-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* -------------------- FORM -------------------- */
+.stock-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-size: 13px;
+  color: #444;
+}
+
+.input-group input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.input-group input:focus {
+  outline: none;
+}
+
+/* -------------------- BUTTON -------------------- */
+.submit-btn {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Increase */
+.submit-btn.increase {
+  background-color: #1976d2;
+}
+
+/* Decrease */
+.submit-btn.decrease {
+  background-color: #d32f2f;
+}
+
+.submit-btn:hover {
+  opacity: 0.95;
+}
+
+/* -------------------- DESKTOP -------------------- */
+@media (min-width: 768px) {
+  .stock-card {
+    padding: 32px;
+  }
+}
